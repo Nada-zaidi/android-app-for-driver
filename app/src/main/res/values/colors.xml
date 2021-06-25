@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <color name="colorPrimaryDark">#0097A7</color> <!-- [ CYAN - 700 ] -->
-    <color name="colorPrimary">#00BCD4</color> <!-- [ CYAN - 500 ] -->
+    <color name="colorPrimaryDark">#FF8C00</color> <!-- [ CYAN - 700 ] -->
+    <color name="colorPrimary">#FFA500</color> <!-- [ CYAN - 500 ] -->
     <color name="colorPrimaryLight">#B3E5FC</color> <!-- [ LIGHT BLUE - 100 ] -->
-    <color name="colorAccent">#7C4DFF</color> <!-- [ DEEP PURPLE - A200 ] -->
+    <color name="colorAccent">#1e3d59</color> <!-- [ DEEP PURPLE - A200 ] -->
 
     <color name="textColorPrimary">#212121</color>
     <color name="textColorSecondary">#727272</color>
@@ -17,8 +17,8 @@
     <color name="colorControlActivated">@color/colorAccent</color>
     <color name="colorControlHighlight">@color/divider</color>
 
-    <color name="colorButtonNormal">#19C1B2</color>
-    <color name="colorSwitchThumbNormal">#19C1B2</color>
+    <color name="colorButtonNormal">#FF8C00</color>
+    <color name="colorSwitchThumbNormal">#000</color>
     <color name="navigationBarColor">@color/colorPrimaryDark</color>
 
 

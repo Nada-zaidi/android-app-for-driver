@@ -8,25 +8,24 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 import java.text.DateFormat;
 import java.util.Date;
 
-import br.com.bloder.magic.view.MagicButton;
-
 public class monitor_menu extends Fragment {
-    MagicButton b;
+    Button b;
     SeekBar s;
     TextView ttv;
-    private String key_2 = "akarshan's project";
+    private String key_2 = "Tassahil's project";
     private String key_4 = "senstivity";
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         final View root;
         root = inflater.inflate(R.layout.activity_monitor_menu,container,false);
-        b = (MagicButton) root.findViewById(R.id.magic_button);
+        b = (Button) root.findViewById(R.id.magic_button);
         s = (SeekBar)root.findViewById(R.id.seekBar2);
         ttv = (TextView)root.findViewById(R.id.textView21);
         if(s.getProgress() == 0)
@@ -120,7 +119,7 @@ public class monitor_menu extends Fragment {
                                          }
                                      });
 
-                b.setMagicButtonClickListener(new View.OnClickListener() {
+                b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(root.getContext(),FaceTrackerActivity.class);

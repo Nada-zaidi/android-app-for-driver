@@ -66,7 +66,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
     private GraphicOverlay mGraphicOverlay;
     private String start_2;
     private String key ="facetrackeractivity";
-    private String key_2 = "akarshan's project";
+    private String key_2 = "Tassahil's project";
     private String key_3 = "hello";
     private String key_4 = "senstivity";
     private int s_status,s_time;
@@ -90,9 +90,9 @@ public final class FaceTrackerActivity extends AppCompatActivity {
         end_button = (Button)findViewById(R.id.button);
         layout = (LinearLayout)findViewById(R.id.topLayout);
         n_mode=(ToggleButton)findViewById(R.id.toggleButton);
-        n_mode.setTextOn("N-Mode ON");
-        n_mode.setText("N-Mode");
-        n_mode.setTextOff("N-Mode OFF");
+        n_mode.setTextOn("Night-Mode ON");
+        n_mode.setText("Night-Mode");
+        n_mode.setTextOff("Night-Mode OFF");
         n_mode.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -365,7 +365,7 @@ public final class FaceTrackerActivity extends AppCompatActivity {
                 AlertDialog dig;
                 dig = new AlertDialog.Builder(FaceTrackerActivity.this)
                         .setTitle("Drowsy Alert !!!")
-                        .setMessage("Tracker suspects that the driver is experiencing Drowsiness, Touch OK to Stop the Alarm")
+                        .setMessage("Dear Driver wake up please  it s not time to drowsy, touch OK to stop the alarm.")
                         .setPositiveButton(android.R.string.yes, new DialogInterface.OnClickListener() {
                             public void onClick(DialogInterface dialog, int which) {
                                 stop_playing();

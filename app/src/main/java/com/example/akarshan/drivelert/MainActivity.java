@@ -46,12 +46,6 @@ public class MainActivity extends FragmentActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        boolean isFirstTime = MyPreferences.isFirst(MainActivity.this);
-        if(isFirstTime == true)
-        {
-            Intent help = new Intent(MainActivity.this, help.class);
-            startActivity(help);
-        }
 
     }
     @Override
@@ -113,11 +107,6 @@ public class MainActivity extends FragmentActivity
 
         if (id == R.id.nav_camera) {
             getSupportFragmentManager().beginTransaction().replace(R.id.frame,new monitor_menu()).commit();
-        }
-        else if(id == R.id.help_page)
-        {
-            Intent hp = new Intent(MainActivity.this,help.class);
-            startActivity(hp);
         }
       else if (id == R.id.nav_send) {
 

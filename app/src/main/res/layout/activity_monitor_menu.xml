@@ -15,6 +15,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Start the monitoring process:"
+        android:textStyle="bold"
         android:id="@+id/textView2"
         android:layout_centerVertical="true"
         android:layout_alignParentLeft="true"
@@ -25,6 +26,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="@string/time_senstivity"
+        android:textStyle="bold"
         android:id="@+id/textView16"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -73,6 +75,7 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceSmall"
         android:text="@string/alarm_will_invoke_after"
+        android:textStyle="bold"
         android:id="@+id/textView15"
         android:layout_below="@+id/textView19"
         android:layout_alignParentLeft="true"
@@ -88,23 +91,17 @@
         android:layout_alignTop="@+id/textView15"
         android:layout_toRightOf="@+id/textView15"
         android:layout_toEndOf="@+id/textView15"
-        android:textColor="#7C4DFF" />
+        android:textColor= "@color/colorAccent" />
 
-    <br.com.bloder.magic.view.MagicButton
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
         android:id="@+id/magic_button"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:magic_button_size="90dp"
-        app:button_icon="@drawable/l"
-
-        app:button_icon_width="70dp"
-        app:button_icon_height="70dp"
-        app:hide_text="Start"
-        app:hide_text_size="15dp"
-        app:hide_text_color="@android:color/black"
         android:layout_below="@+id/textView2"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="40dp"></br.com.bloder.magic.view.MagicButton>
+        android:layout_marginTop="40dp"
+        android:text="start" />
 
 </RelativeLayout>
